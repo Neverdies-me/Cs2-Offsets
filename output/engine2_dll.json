@@ -21,7 +21,7 @@
           "m_Value": 24
         },
         "metadata": [],
-        "parent": null
+        "parent": ""
       },
       "CNetworkVarChainer": {
         "fields": {
@@ -348,22 +348,24 @@
       }
     },
     "enums": {
-      "_vu___": {
-        "alignment": 101,
+      "EntityDormancyType_t": {
+        "alignment": 4,
         "members": {
-          "": 0,
-          "\u0010\u0018\u0015\u001f�": 4638564681120,
-          " �)\u001f�": 67043328,
-          "0x)\u001f�": 50331648,
-          "0�dw�\u0001": 1702808598456,
-          "@�\r\u001f�": 0,
-          "p�)\u001f�": 0,
-          "p�dw�\u0001": 1702808616632,
-          "xx)\u001f�": 0,
-          "�\u0017\u0015\u001f�": 0,
-          "��dw�\u0001": 1702808601848
+          "ENTITY_DORMANT": 1,
+          "ENTITY_NOT_DORMANT": 0,
+          "ENTITY_SUSPENDED": 2
         },
-        "type": "unknown"
+        "type": "uint32"
+      },
+      "EntityIOTargetType_t": {
+        "alignment": 4,
+        "members": {
+          "ENTITY_IO_TARGET_EHANDLE": 6,
+          "ENTITY_IO_TARGET_ENTITYNAME": 2,
+          "ENTITY_IO_TARGET_ENTITYNAME_OR_CLASSNAME": 7,
+          "ENTITY_IO_TARGET_INVALID": -1
+        },
+        "type": "uint32"
       }
     }
   }
